@@ -53,11 +53,15 @@ jobs:
        cd ~
        cd payload_dumper
        python payload_dumper.py payload.bin
-   
-
     
-    - name: Upload the bootimg to WeTransfer
+    - name: Upload the boot to WeTransfer
       run: |
         cd ~
         curl -sL https://git.io/file-transfer | sh
         ./transfer wet ~/payload_dumper/output/boot.img
+
+    - name: Upload the vendor_boot to WeTransfer
+      run: |
+        cd ~
+        curl -sL https://git.io/file-transfer | sh
+        ./transfer wet ~/payload_dumper/output/vendor_boot.img
