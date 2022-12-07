@@ -5,7 +5,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.5.5.0.RKICNXM/miui_RENOIR_V12.5.5.0.RKICNXM_dfcbb54c9a_11.0.zip
+  ROM_URL: https://bigota.d.miui.com/V13.0.12.0.SKICNXM/miui_RENOIR_V13.0.12.0.SKICNXM_ab867de060_12.0.zip
   TZ: Asia/Shanghai
 
 jobs:
